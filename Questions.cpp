@@ -334,8 +334,34 @@ int binary_search_tree (uint8_t *arr, int start, int end, int element)
 
     return -1; // didnt find the element
 }
+
+int Add(int x, int y) {return x+y;}
+int Sub(int x, int y) {return x-y;}
+int Mult(int x, int y){return x*y;}
+int Div(int x, int y){return x/y;}
+int Operation(int (*Func)(int, int), int x, int y) // Function that takes in a function pointer  and two ints
+{
+    return Func(x,y);
+}
 int main(){      
     
+
+    #ifdef Q19
+    // Use function pointer to perform operations!
+    int sum, diff, prod, quot;
+    sum = Operation(Add, 10, 5);
+    diff = Operation(Diff, 10, 5);
+    prod = Operation(Mult, 10, 5);
+    quot = Operation(Div, 10, 5);
+
+    printf("SUM: %d\n", sum);
+    printf("DIFF: %d\n", diff);
+    printf("PROD: %d\n", prod);
+    printf("QUOT: %d\n", quot);
+    
+    #endif
+
+
     #ifdef Q18
     uint8_t arr[] = {1,2,4,8,16,32,64,128,255};
     int result;
