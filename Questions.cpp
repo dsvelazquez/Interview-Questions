@@ -56,10 +56,11 @@ unless specified by the user.
 //#define Q12 // Reverse an array. Any method
 //#define Q13 // FIZZ BUZZ. Return a function array.
 //#define Q14 // Create a Struct Union for a protocol
-#define Q15 // Write a function that converts Hexadecimal array bytes to decimal number
+//#define Q15 // Write a function that converts Hexadecimal array bytes to decimal number
 //#define Q16 // Write a recursive function that converts Hexadecimal string to decimal number
 //#define Q17 // Write a function that converts a string to int
 //#define Q18 // Create a Binary Search Tree
+#define Q19 // Write a function pointer for add, sub, mult, and divide two ints and returns an int.
 
 int setBit(int num, int bit){
     num |= (1UL << bit);              //  (X << Y) where X is setting the nth bit and Y is the bit number. (begins with bit 0)
